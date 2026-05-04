@@ -31,7 +31,7 @@ export default function AdminDashboard() {
   );
 
   const netRevenue = orders
-    .filter((o) => (o.paymentStatus === "paid" || (!o.paymentStatus && !!o.paymentId)) && o.paymentStatus !== "refunded")
+    .filter((o) => (o.paymentStatus === "paid" || (!o.paymentStatus && !!o.paymentId)) && (o.paymentStatus as string) !== "refunded")
     .reduce((sum, o) => sum + (o.totalAmount || 0), 0);
 
   const refundedAmount = orders
