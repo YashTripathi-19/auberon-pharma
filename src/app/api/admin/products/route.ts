@@ -26,6 +26,10 @@ export async function POST(request: NextRequest) {
     }
 
     const product: Product = {
+      subcategory: body.subcategory || "",
+      manufacturer: body.manufacturer || "",
+      prescriptionRequired: body.prescriptionRequired || false,
+      form: body.form || "",
       id: `prod_${generateId()}`,
       name,
       slug: slugify(name),
