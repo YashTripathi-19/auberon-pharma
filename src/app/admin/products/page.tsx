@@ -282,7 +282,7 @@ export default function AdminProductsPage() {
       )}
 
       {/* Restock Notification Requests panel */}
-      {restockNotifs.filter(r => !r.notified).length > 0 && (
+      {restockNotifs.filter(r => !r.notifiedAt).length > 0 && (
         <div style={{ background: "white", borderRadius: "20px", border: "1px solid rgba(0,0,0,0.06)", overflow: "hidden" }}>
           <button onClick={() => setRestockOpen((v) => !v)}
             style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 24px", background: "none", border: "none", cursor: "pointer" }}>
@@ -290,7 +290,7 @@ export default function AdminProductsPage() {
               <Bell size={16} style={{ color: "#c9933a" }} />
               <span style={{ fontSize: "14px", fontWeight: 600, color: "#0B1F3A" }}>Restock Notification Requests</span>
               <span style={{ fontSize: "11px", fontWeight: 700, padding: "2px 10px", borderRadius: "999px", background: "#fef9ec", color: "#c9933a", border: "1px solid #f0d9a0" }}>
-                {restockNotifs.filter(r => !r.notified).length} customer{restockNotifs.filter(r => !r.notified).length !== 1 ? "s" : ""} waiting
+                {restockNotifs.filter(r => !r.notifiedAt).length} customer{restockNotifs.filter(r => !r.notifiedAt).length !== 1 ? "s" : ""} waiting
               </span>
             </div>
             {restockOpen ? <ChevronUp size={16} style={{ color: "#6E6E73" }} /> : <ChevronDown size={16} style={{ color: "#6E6E73" }} />}
@@ -300,7 +300,7 @@ export default function AdminProductsPage() {
             <div style={{ borderTop: "1px solid rgba(0,0,0,0.06)", overflowX: "auto" }}>
               {(() => {
                 // Filter to show only pending (not notified) entries
-                const pendingNotifs = restockNotifs.filter(r => !r.notified);
+                const pendingNotifs = restockNotifs.filter(r => !r.notifiedAt);
                 
                 if (pendingNotifs.length === 0) {
                   return <p style={{ padding: "32px 24px", fontSize: "14px", color: "#6E6E73", textAlign: "center" }}>No pending restock requests</p>;
