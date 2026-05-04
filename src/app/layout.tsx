@@ -4,6 +4,8 @@ import "./globals.css";
 import Toast from "@/components/ui/Toast";
 import SaleBannerProvider from "@/components/layout/SaleBannerProvider";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-display",
@@ -69,6 +71,8 @@ export default function RootLayout({
         {children}
         <Toast />
         <WhatsAppButton />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
