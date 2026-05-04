@@ -62,14 +62,14 @@ export async function POST(request: NextRequest) {
       }
 
       // Admin notification
-      const amtRs = order.amountPaid
+      const refundAmtRs = order.amountPaid
         ? `Rs. ${new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(order.amountPaid / 100)}`
         : "the paid amount";
       await t.sendMail({
         from: `"Auberon Pharmaceuticals" <${GMAIL_USER}>`,
         to: "auberon.pharma@gmail.com",
         subject: `Refund Processed — Order ${order.id}`,
-        text: `Refund processed.\n\nOrder ID: ${order.id}\nCustomer: ${order.customerName}\nEmail: ${order.customerEmail || "—"}\nPhone: ${order.customerPhone}\nRefund Amount: ${amtRs}\nReason: ${reason || "Not provided"}\nPayment ID: ${order.paymentId}`,
+        text: `Refund processed.\n\nOrder ID: ${order.id}\nCustomer: ${order.customerName}\nEmail: ${order.customerEmail || "—"}\nPhone: ${order.customerPhone}\nRefund Amount: ${refundAmtRs}\nReason: ${reason || "Not provided"}\nPayment ID: ${order.paymentId}`,
       }).catch(() => {});
     }
 
