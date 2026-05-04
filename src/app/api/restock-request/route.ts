@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
       productName,
       orderId: orderId || "",
       userEmail: payload.email,
-      userName: payload.name || payload.email,
+      userName: (payload as any).name || payload.email,
       requestedQty: requestedQty || 1,
       requestedAt: new Date().toISOString(),
       notified: false,

@@ -140,7 +140,7 @@ export function getOrdersByUserId(userId: string): Order[] {
 // Contacts
 export function getContacts(): Contact[] {
   return readJSON<Contact[]>("contacts.json")
-    .map((c) => ({ isRead: false, ...c })) // graceful fallback for existing entries without isRead
+    .map((c) => ({ ...c, isRead: c.isRead ?? false })) // graceful fallback for existing entries without isRead
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 }
 
@@ -164,7 +164,7 @@ export function markContactAsRead(id: string): Contact | null {
   if (index === -1) return null;
   contacts[index] = { ...contacts[index], isRead: true };
   writeJSON("contacts.json", contacts);
-  return { isRead: false, ...contacts[index] };
+  return contacts[index];
 }
 
 // Users

@@ -543,7 +543,7 @@ export default function ProfilePage() {
                                       {order.items.map((item, idx) => {
                                         const itemKey = `${order.id}_${item.productId}`;
                                         const restockState = restockStates[itemKey] || 'idle';
-                                        const showRestockBtn = (order.status === "rejected" || order.status === "cancelled");
+                                        const showRestockBtn = (order.status === "rejected" || (order.status as string) === "cancelled");
                                         
                                         return (
                                           <div key={idx} style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>

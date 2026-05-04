@@ -11,7 +11,7 @@ export default function Eye3DModel({ highlightPart, condition }: Eye3DModelProps
   const [hoveredPart, setHoveredPart] = useState<string | null>(null)
   const [rotating, setRotating] = useState(true)
   const [rotation, setRotation] = useState(0)
-  const animRef = useRef<number>()
+  const animRef = useRef<number | undefined>(undefined)
 
   useEffect(() => {
     if (!rotating) return

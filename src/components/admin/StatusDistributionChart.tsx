@@ -34,16 +34,22 @@ export default function StatusDistributionChart({ orders }: Props) {
   const hasData = data.some((d) => d.value > 0);
 
   const renderLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, value, name }: {
-    cx: number; cy: number; midAngle: number; innerRadius: number; outerRadius: number; value: number; name: string;
+    cx?: number; cy?: number; midAngle?: number; innerRadius?: number; outerRadius?: number; value?: number; name?: string;
   }) => {
-    if (value === 0) return null;
+    const cxVal = cx ?? 0;
+    const cyVal = cy ?? 0;
+    const midVal = midAngle ?? 0;
+    const innerVal = innerRadius ?? 0;
+    const outerVal = outerRadius ?? 0;
+    const valueVal = value ?? 0;
+    if (valueVal === 0) return null;
     const RADIAN = Math.PI / 180;
-    const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-    const x = cx + radius * Math.cos(-midAngle * RADIAN);
-    const y = cy + radius * Math.sin(-midAngle * RADIAN);
+    const radius = innerVal + (outerVal - innerVal) * 0.5;
+    const x = cxVal + radius * Math.cos(-midVal * RADIAN);
+    const y = cyVal + radius * Math.sin(-midVal * RADIAN);
     return (
       <text x={x} y={y} fill="white" textAnchor="middle" dominantBaseline="central" fontSize={10} fontWeight={700}>
-        {value}
+        {valueVal}
       </text>
     );
   };
@@ -74,7 +80,10 @@ export default function StatusDistributionChart({ orders }: Props) {
                 ))}
               </Pie>
               <Tooltip
-                formatter={(value: number, name: string) => [`${value} orders`, name]}
+                formatter={(value: unknown, name: unknown) => {
+                  const v = value as number;
+                  return [`${v} orders`, name as string];
+                }}
                 contentStyle={{ borderRadius: "12px", border: "1px solid #f0f0f0", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}
               />
               <Legend
@@ -82,11 +91,6 @@ export default function StatusDistributionChart({ orders }: Props) {
                 iconType="circle"
                 iconSize={8}
                 wrapperStyle={{ paddingTop: "16px" }}
-                payload={ALL_STATUSES.map((s) => ({
-                  value: `${s.charAt(0).toUpperCase() + s.slice(1)} (${data.find((d) => d.key === s)?.value ?? 0})`,
-                  type: "circle" as const,
-                  color: STATUS_COLORS[s],
-                }))}
                 formatter={(value) => <span style={{ color: "#6B7280", fontSize: "11px" }}>{value}</span>}
               />
             </PieChart>

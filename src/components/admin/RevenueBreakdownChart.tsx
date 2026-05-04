@@ -9,7 +9,7 @@ interface Props { orders: Order[] }
 
 export default function RevenueBreakdownChart({ orders }: Props) {
   const netRevenue = orders
-    .filter((o) => (o.paymentStatus === "paid" || (!o.paymentStatus && !!o.paymentId)) && o.paymentStatus !== "refunded")
+    .filter((o) => (o.paymentStatus === "paid" || (!o.paymentStatus && !!o.paymentId)) && (o.paymentStatus as string) !== "refunded")
     .reduce((sum, o) => sum + (o.totalAmount || 0), 0);
 
   const refundedAmount = orders
@@ -52,7 +52,10 @@ export default function RevenueBreakdownChart({ orders }: Props) {
                   ))}
                 </Pie>
                 <Tooltip
-                  formatter={(value: number, name: string) => [formatCurrencyFull(value), name]}
+                  formatter={(value: unknown, name: unknown) => {
+                    const v = value as number;
+                    return [formatCurrencyFull(v), name as string];
+                  }}
                   contentStyle={{ borderRadius: "12px", border: "1px solid #f0f0f0", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}
                 />
               </PieChart>

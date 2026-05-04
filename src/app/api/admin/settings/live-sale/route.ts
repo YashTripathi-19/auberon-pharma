@@ -11,9 +11,9 @@ export async function PATCH(request: NextRequest) {
       return NextResponse.json({ error: "Unauthorised" }, { status: 401 });
     }
     const liveSale = await request.json();
-    const settings = getSettings() as Record<string, unknown>;
+    const settings = getSettings() as unknown as Record<string, unknown>;
     settings.liveSale = liveSale;
-    saveSettings(settings as Parameters<typeof saveSettings>[0]);
+    saveSettings(settings as unknown as Parameters<typeof saveSettings>[0]);
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: "Failed to save" }, { status: 500 });

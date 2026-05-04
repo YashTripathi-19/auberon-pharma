@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
       subject: subject || "General Inquiry",
       message,
       createdAt: new Date().toISOString(),
+      isRead: false,
     };
 
     saveContact(contact);

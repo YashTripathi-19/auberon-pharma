@@ -71,7 +71,10 @@ export default function CategoryBreakdownChart({ products, orders }: CategoryBre
               ))}
             </Pie>
             <Tooltip
-              formatter={(value: number, name: string) => [`${value} orders`, name]}
+              formatter={(value: unknown, name: unknown) => {
+                const v = value as number;
+                return [`${v} orders`, name as string];
+              }}
               contentStyle={{ borderRadius: "12px", border: "1px solid #f0f0f0", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}
             />
             <Legend
@@ -79,11 +82,6 @@ export default function CategoryBreakdownChart({ products, orders }: CategoryBre
               iconType="circle"
               iconSize={8}
               wrapperStyle={{ paddingTop: "16px" }}
-              payload={displayData.map((entry, index) => ({
-                value: entry.name,
-                type: "circle" as const,
-                color: CATEGORY_COLORS[index % CATEGORY_COLORS.length],
-              }))}
               formatter={(value) => <span style={{ color: "#6B7280", fontSize: "12px" }}>{value}</span>}
             />
           </PieChart>
