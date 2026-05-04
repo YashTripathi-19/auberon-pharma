@@ -13,7 +13,7 @@ export async function PATCH(request: NextRequest) {
     const hospitalWing = await request.json();
     const settings = getSettings() as unknown as Record<string, unknown>;
     settings.hospitalWing = hospitalWing;
-    saveSettings(settings as Parameters<typeof saveSettings>[0]);
+    saveSettings(settings as unknown as Parameters<typeof saveSettings>[0]);
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: "Failed to save" }, { status: 500 });
