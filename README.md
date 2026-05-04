@@ -120,7 +120,7 @@ tests/                # Playwright smoke tests
 
 ## Deployment
 
-Deployed on Vercel. See [vercel.com](https://vercel.com) for deployment documentation.
+Live at [auberon-pharma.vercel.app](https://auberon-pharma.vercel.app) — deployment documentation.
 
 ## License
 
