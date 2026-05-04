@@ -1,86 +1,127 @@
-# Auberon Pharmaceuticals — Digital Commerce Platform
+# Auberon Pharmaceuticals
 
-> A full-stack pharmaceutical e-commerce and operations platform purpose-built for an ophthalmic medicine brand. Designed to serve both end consumers and internal business operations through a unified, production-grade web application.
-
----
-
-## Overview
-
-Auberon Pharmaceuticals is a digital platform that bridges the gap between a pharmaceutical brand and its customers. The platform enables patients and healthcare professionals to browse a curated catalogue of ophthalmic formulations, place medicine orders online, and receive support — all within a seamless, trust-first experience.
-
-On the operational side, the platform provides a dedicated admin suite for managing orders, monitoring business performance, and maintaining product and customer data.
-
-This project is currently in active development, started April 2026.
-
----
-
-## Key Features
-
-### Public-Facing Application
-
-- **Landing Page** — Hero section, brand story, featured products, trust signals, testimonials, and newsletter capture
-- **Product Catalogue** — Filterable and searchable catalogue of ophthalmic products with clinical-grade product information
-- **Order / Booking Flow** — Cart-based ordering with delivery details; orders are reviewed and confirmed by the team within 24 hours
-- **User Authentication** — Signup, email verification, login, and session management
-- **User Profile & Order History** — Account management and real-time order status tracking
-- **Support Centre** — Doctor helpline, FAQ, and contact form
-
-### Admin Operations Suite
-
-- **Dashboard** — Business KPIs, sales trends, top products, and activity feed
-- **Order Management** — Full order lifecycle management with status updates
-- **Product Management** — Create, edit, and manage the product catalogue
-- **Analytics** — Date-range filtered visualisations and performance metrics
-- **Automated Reporting** — Scheduled daily business reports via email
-
----
-
-## High-Level Architecture
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Next.js Application                   │
-│                                                         │
-│  ┌──────────────────┐      ┌──────────────────────────┐ │
-│  │  Public Routes   │      │     Admin Routes         │ │
-│  │  (Customer-      │      │  (Protected Operations   │ │
-│  │   Facing)        │      │   Dashboard)             │ │
-│  └──────────────────┘      └──────────────────────────┘ │
-│                                                         │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │                   API Layer                       │   │
-│  │   Auth · Orders · Products · Admin · Automation  │   │
-│  └──────────────────────────────────────────────────┘   │
-│                                                         │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │             Data & Services Layer                 │   │
-│  │   Database · Email · PDF Reports · Auth Services  │   │
-│  └──────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────┘
-```
-
----
+A full-stack pharmaceutical e-commerce platform specialising in ophthalmic medicines — built for patients, wholesalers, and clinics across India.
 
 ## Tech Stack
 
-Built with Next.js, TypeScript, and Tailwind CSS.
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- Recharts
+- Zustand
+- React Hook Form + Zod
+- Jose (JWT)
+- Nodemailer
+- Bcryptjs
+- Razorpay
+- File-based data storage (JSON)
 
----
+## Features
 
-## Domain Context
+### Public Site
 
-All products on the platform are ophthalmic pharmaceutical formulations — a specialised category including antibiotic eye drops, corticosteroid drops, lubricating drops, glaucoma medications, and anti-inflammatory agents. Product pages are designed to surface clinical information relevant to patients and healthcare professionals.
+- Product catalogue with category, subcategory and form filters
+- Online medicine ordering with cart and bulk denomination options
+- Checkout with SGST/CGST, handling charges, coupon codes
+- Role-based pricing (Customer / Wholesaler / Clinic)
+- Razorpay payment gateway integration
+- Wishlist with restock notifications
+- Hospital wing with appointment booking
+- Eye health tools (colour blindness test, AI eye scanner)
+- Interactive eye knowledge hub with 3D anatomy model
+- Partners & sponsors directory
+- Newsletter subscription
+- Help centre with FAQ and contact form
 
-The ordering model is intentionally non-transactional at this stage — orders are treated as bookings requiring human confirmation, aligning with compliance requirements typical in pharmaceutical distribution.
+### Auth System
 
----
+- Three-role authentication (Customer / Wholesaler / Clinic)
+- Email OTP verification
+- Google reCAPTCHA v3
+- JWT sessions with secure httpOnly cookies
+- Brute force protection + rate limiting
 
-## Author
+### Admin Panel
 
-**Yash Tripathi**
-Full-Stack Developer
-[GitHub](https://github.com/YashTripathi-19)
+- Dashboard with KPI cards and analytics
+- Full product CRUD with category management
+- Order lifecycle management with status emails
+- Customer and business verification flows
+- Coupon and discount management
+- Restock request management
+- Feedback viewer
+- Affiliated hospitals and partners management
+- Newsletter blast with role targeting
+- Daily PDF business reports
 
----
+### Communications
 
-*Project started: April 2026. Active development in progress.*
+- Branded HTML email templates (Nodemailer + Gmail SMTP)
+- WhatsApp deep link integration
+- Payment slip with UPI QR code generation
+- Post-order feedback collection
+- Restock notification emails
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/YashTripathi-19/auberon-pharma
+cd auberon-pharma
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+JWT_SECRET=your-jwt-secret
+GMAIL_USER=your-gmail
+GMAIL_APP_PASSWORD=your-app-password
+RAZORPAY_KEY_ID=your-razorpay-key
+RAZORPAY_KEY_SECRET=your-razorpay-secret
+NEXT_PUBLIC_RAZORPAY_KEY_ID=your-razorpay-key
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY=your-recaptcha-key
+RECAPTCHA_SECRET_KEY=your-recaptcha-secret
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+## Project Structure
+
+```
+src/
+├── app/              # Next.js App Router pages
+│   ├── admin/        # Admin panel
+│   ├── api/          # API routes
+│   └── ...           # Public pages
+├── components/       # Reusable React components
+├── lib/              # Utilities (auth, db, email, etc.)
+└── store/            # Zustand state management
+data/                 # JSON data files
+public/               # Static assets
+tests/                # Playwright smoke tests
+```
+
+## Deployment
+
+Deployed on Vercel. See [vercel.com](https://vercel.com) for deployment documentation.
+
+## License
+
+Private — All rights reserved. Auberon Pharmaceuticals.

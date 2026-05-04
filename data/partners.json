@@ -1,0 +1,12 @@
+[
+  {
+    "id": "partner_1",
+    "name": "Vision Care India",
+    "category": "Hospital",
+    "description": "Leading eye care hospital chain across North India.",
+    "website": "https://example.com",
+    "logo": "",
+    "active": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  }
+]

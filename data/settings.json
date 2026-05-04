@@ -1,0 +1,39 @@
+{
+  "roleDiscounts": {
+    "customer": {
+      "percentage": 2,
+      "isActive": true
+    },
+    "wholesaler": {
+      "percentage": 10,
+      "isActive": true
+    },
+    "clinic": {
+      "percentage": 20,
+      "isActive": true
+    }
+  },
+  "upiId": "auberon.pharma@oksbi",
+  "taxAndCharges": {
+    "sgst": 6,
+    "cgst": 6,
+    "handlingCharge": 25,
+    "freeShippingAbove": 500
+  },
+  "liveSale": {
+    "isActive": false,
+    "title": "Flash Sale",
+    "subtitle": "Limited time offer — shop now!",
+    "discountPercentage": 25,
+    "applicableTo": "customer",
+    "endsAt": null,
+    "bannerColor": "red",
+    "showCountdown": true
+  },
+  "hospitalWing": {
+    "isPublic": true,
+    "showInNav": true,
+    "showHomeTeaser": true,
+    "showSupportCard": true
+  }
+}

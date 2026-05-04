@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rn-mobzq39t-h3f2p",
+    "userId": "mnidomot-xkkkt4",
+    "userEmail": "yash.tripathi.35175@gmail.com",
+    "userName": "Yash Tripathi",
+    "productId": "prod_007",
+    "productName": "Latanoprost Eye Drops 0.005%",
+    "desiredQuantity": 88,
+    "notifyWhenAvailable": true,
+    "createdAt": "2026-04-23T21:25:17.969Z",
+    "notifiedAt": "2026-04-24T00:35:24.156Z",
+    "isNotified": false,
+    "notified": true
+  },
+  {
+    "id": "rn-moc6pwu9-5ge3w",
+    "userId": "mnidomot-xkkkt4",
+    "userEmail": "yash.tripathi.35175@gmail.com",
+    "userName": "Yash Tripathi",
+    "productId": "prod_002",
+    "productName": "Prednisolone Acetate Eye Drops 1%",
+    "desiredQuantity": 100,
+    "notifyWhenAvailable": true,
+    "createdAt": "2026-04-24T00:41:06.945Z",
+    "notifiedAt": "2026-04-24T01:18:44.070Z",
+    "isNotified": true,
+    "notified": true
+  },
+  {
+    "id": "restock_1776993383484",
+    "productId": "prod_004",
+    "productName": "Timolol Maleate Eye Drops 0.5%",
+    "orderId": "",
+    "userEmail": "yash.tripathi.35175@gmail.com",
+    "userName": "yash.tripathi.35175@gmail.com",
+    "requestedQty": 373,
+    "requestedAt": "2026-04-24T01:16:23.484Z",
+    "notified": true,
+    "notifiedAt": "2026-04-24T01:19:08.340Z"
+  }
+]

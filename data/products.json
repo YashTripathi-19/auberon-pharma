@@ -1,0 +1,339 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Moxifloxacin Eye Drops 0.5%",
+    "slug": "moxifloxacin-eye-drops-05",
+    "category": "Ophthalmics",
+    "subcategory": "Antibiotic Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Eye Drops",
+    "description": "Fourth-generation fluoroquinolone antibiotic eye drops for the treatment of bacterial conjunctivitis and corneal ulcers. Broad-spectrum activity against gram-positive and gram-negative organisms including Staphylococcus aureus and Streptococcus pneumoniae.",
+    "dosageInfo": "Bacterial conjunctivitis: 1 drop in affected eye(s) 3 times daily for 7 days. Corneal ulcer: 1 drop every 30 minutes while awake on day 1–2, then every hour while awake on days 3–7, then 4 times daily until resolved. Wash hands before use.",
+    "usage": "Instil prescribed number of drops into the conjunctival sac. Tilt head back, pull lower eyelid down gently. Avoid touching dropper tip to eye or any surface. Replace cap immediately after use. Store below 25°C.",
+    "composition": "Each mL contains Moxifloxacin Hydrochloride equivalent to Moxifloxacin 5mg (0.5% w/v). Preservative: Benzalkonium Chloride 0.01% w/v. Vehicle: Boric Acid, Sodium Chloride, Purified Water.",
+    "sideEffects": "Common: Transient burning or stinging on instillation, eye irritation, dry eye. Uncommon: Conjunctival hyperaemia, blurred vision, eye pain. Rare: Hypersensitivity reactions, corneal deposits with prolonged use. Discontinue if severe ocular reaction occurs.",
+    "price": 185,
+    "stock": 1004,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=Moxifloxacin+0.5%25"
+    ],
+    "rating": 4.7,
+    "reviewCount": 312,
+    "isActive": true,
+    "tags": [
+      "antibiotic",
+      "eye drops",
+      "conjunctivitis",
+      "ophthalmic"
+    ]
+  },
+  {
+    "id": "prod_002",
+    "name": "Prednisolone Acetate Eye Drops 1%",
+    "slug": "prednisolone-acetate-eye-drops-1",
+    "category": "Ophthalmics",
+    "subcategory": "Anti-inflammatory Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Eye Drops",
+    "description": "Corticosteroid eye drops for the treatment of ocular inflammation associated with uveitis, iritis, cyclitis, and post-operative inflammation. Reduces redness, swelling, and discomfort in inflammatory eye conditions.",
+    "dosageInfo": "Acute inflammation: 1–2 drops every 1–2 hours during waking hours for the first 24–48 hours, then reduce to 1 drop 4 times daily. Post-operative: 1 drop 4 times daily for 2–4 weeks. Taper gradually — do not stop abruptly. Use under ophthalmologist supervision.",
+    "usage": "Shake well before use. Instil into conjunctival sac as directed. Do not use while wearing soft contact lenses. Wash hands before and after use. Store upright below 25°C. Discard 28 days after opening.",
+    "composition": "Each mL contains Prednisolone Acetate IP 10mg (1% w/v). Preservative: Benzalkonium Chloride 0.01% w/v. Suspending agents: Hydroxypropyl Methylcellulose, Polysorbate 80, Purified Water.",
+    "sideEffects": "Common: Transient stinging, blurred vision after instillation. Uncommon: Raised intraocular pressure, posterior subcapsular cataract with prolonged use. Rare: Secondary ocular infections, corneal thinning, delayed wound healing. Monitor IOP with prolonged use.",
+    "price": 210,
+    "stock": 1000,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=Prednisolone+1%25"
+    ],
+    "rating": 4.6,
+    "reviewCount": 198,
+    "isActive": true,
+    "tags": [
+      "steroid",
+      "anti-inflammatory",
+      "eye drops",
+      "uveitis"
+    ]
+  },
+  {
+    "id": "prod_003",
+    "name": "Carboxymethylcellulose Eye Drops 0.5%",
+    "slug": "carboxymethylcellulose-eye-drops-0-5",
+    "category": "Ophthalmics",
+    "subcategory": "Lubricating Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": false,
+    "form": "Eye Drops",
+    "description": "Lubricating eye drops for the relief of dry eye syndrome and ocular surface discomfort. Provides long-lasting moisture and protection to the ocular surface. Suitable for daily use including in contact lens wearers.",
+    "dosageInfo": "1–2 drops in affected eye(s) as needed, up to 6 times daily or as directed by physician. For severe dry eye: use every 1–2 hours initially. Can be used with contact lenses — instil before lens insertion or after removal.",
+    "usage": "Instil drops into the conjunctival sac. Blink gently after instillation to spread evenly. Preservative-free formulation — safe for frequent use. Store at room temperature. Discard 30 days after opening.",
+    "composition": "Each mL contains Carboxymethylcellulose Sodium 5mg (0.5% w/v). Preservative-free. Vehicle: Sodium Chloride, Potassium Chloride, Calcium Chloride, Magnesium Chloride, Purified Water.",
+    "sideEffects": "Very well tolerated. Common: Transient mild blurring immediately after instillation. Rare: Hypersensitivity to any component. No significant systemic absorption. Safe for long-term use.",
+    "price": 120,
+    "stock": 320,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=CMC+0.5%25"
+    ],
+    "rating": 4.5,
+    "reviewCount": 445,
+    "isActive": true,
+    "tags": [
+      "lubricant",
+      "dry eye",
+      "eye drops",
+      "preservative-free"
+    ]
+  },
+  {
+    "id": "prod_004",
+    "name": "Timolol Maleate Eye Drops 0.5%",
+    "slug": "timolol-maleate-eye-drops-05",
+    "category": "Ophthalmics",
+    "subcategory": "Glaucoma Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Eye Drops",
+    "description": "Beta-adrenergic blocking agent for the reduction of elevated intraocular pressure in patients with ocular hypertension and open-angle glaucoma. Reduces aqueous humour production without affecting pupil size or accommodation.",
+    "dosageInfo": "1 drop in affected eye(s) twice daily (morning and evening). Once IOP is controlled, 1 drop once daily may be sufficient. Do not exceed 1 drop twice daily. Regular IOP monitoring required. Do not discontinue without physician advice.",
+    "usage": "Instil into conjunctival sac. Apply gentle pressure to the inner corner of the eye for 1–2 minutes after instillation to reduce systemic absorption. Store below 25°C. Discard 28 days after opening.",
+    "composition": "Each mL contains Timolol Maleate IP equivalent to Timolol 5mg (0.5% w/v). Preservative: Benzalkonium Chloride 0.01% w/v. Vehicle: Monobasic Sodium Phosphate, Dibasic Sodium Phosphate, Purified Water.",
+    "sideEffects": "Ocular: Burning, stinging, blurred vision, reduced corneal sensitivity. Systemic: Bradycardia, hypotension, bronchospasm (caution in asthma/COPD), fatigue. Contraindicated in sinus bradycardia, heart block, cardiogenic shock, and reactive airway disease.",
+    "price": 165,
+    "stock": 3650,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=Timolol+0.5%25"
+    ],
+    "rating": 4.8,
+    "reviewCount": 267,
+    "isActive": true,
+    "tags": [
+      "glaucoma",
+      "beta-blocker",
+      "IOP",
+      "eye drops"
+    ]
+  },
+  {
+    "id": "prod_005",
+    "name": "Ciprofloxacin Eye Drops 0.3%",
+    "slug": "ciprofloxacin-eye-drops-0-3",
+    "category": "Ophthalmics",
+    "subcategory": "Antibiotic Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Eye Drops",
+    "description": "Fluoroquinolone antibiotic eye drops for bacterial ocular infections including conjunctivitis, blepharitis, and corneal ulcers. Effective against a broad spectrum of gram-positive and gram-negative bacteria.",
+    "dosageInfo": "Conjunctivitis: 1–2 drops every 2 hours while awake for 2 days, then 1–2 drops every 4 hours for 5 days. Corneal ulcer: 2 drops every 15 minutes for 6 hours, then every 30 minutes for remainder of day 1, then 2 drops hourly on day 2, then 2 drops every 4 hours on days 3–14.",
+    "usage": "Instil into conjunctival sac. Tilt head back, look upward, pull lower lid down. Avoid contaminating dropper tip. Wash hands before use. Store below 25°C away from light.",
+    "composition": "Each mL contains Ciprofloxacin Hydrochloride equivalent to Ciprofloxacin 3mg (0.3% w/v). Preservative: Benzalkonium Chloride 0.006% w/v. Vehicle: Acetic Acid, Sodium Acetate, Mannitol, Purified Water.",
+    "sideEffects": "Common: Local burning, stinging, white crystalline precipitate (corneal ulcer patients). Uncommon: Lid margin crusting, conjunctival hyperaemia, bad taste. Rare: Corneal staining, keratopathy, hypersensitivity reactions.",
+    "price": 95,
+    "stock": 500,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=Ciprofloxacin+0.3%25"
+    ],
+    "rating": 4.4,
+    "reviewCount": 389,
+    "isActive": true,
+    "tags": [
+      "antibiotic",
+      "eye drops",
+      "conjunctivitis",
+      "fluoroquinolone"
+    ]
+  },
+  {
+    "id": "prod_006",
+    "name": "Ketorolac Tromethamine Eye Drops 0.5%",
+    "slug": "ketorolac-eye-drops-0-5",
+    "category": "Ophthalmics",
+    "subcategory": "Anti-inflammatory Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Eye Drops",
+    "description": "Non-steroidal anti-inflammatory eye drops for the relief of ocular itching due to seasonal allergic conjunctivitis and post-operative inflammation following cataract surgery. Inhibits prostaglandin synthesis.",
+    "dosageInfo": "Allergic conjunctivitis: 1 drop 4 times daily. Post-cataract surgery: 1 drop 4 times daily beginning 24 hours before surgery and continuing for 2 weeks post-operatively. Do not use for more than 5 days for pain unless directed by physician.",
+    "usage": "Instil into conjunctival sac. Do not use while wearing contact lenses. Wash hands before use. Store below 25°C. Discard 28 days after opening.",
+    "composition": "Each mL contains Ketorolac Tromethamine 5mg (0.5% w/v). Preservative: Benzalkonium Chloride 0.01% w/v. Vehicle: Sodium Chloride, Hydrochloric Acid, Purified Water.",
+    "sideEffects": "Common: Transient stinging and burning on instillation, superficial keratitis. Uncommon: Corneal oedema, iritis, ocular irritation. Rare: Corneal ulceration, perforation with prolonged use. Use with caution in patients with bleeding tendencies.",
+    "price": 145,
+    "stock": 174,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=Ketorolac+0.5%25"
+    ],
+    "rating": 4.5,
+    "reviewCount": 201,
+    "isActive": true,
+    "tags": [
+      "NSAID",
+      "anti-inflammatory",
+      "eye drops",
+      "post-operative"
+    ]
+  },
+  {
+    "id": "prod_007",
+    "name": "Latanoprost Eye Drops 0.005%",
+    "slug": "latanoprost-eye-drops-0005",
+    "category": "Ophthalmics",
+    "subcategory": "Glaucoma Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Eye Drops",
+    "description": "Prostaglandin analogue for the reduction of elevated intraocular pressure in open-angle glaucoma and ocular hypertension. Increases uveoscleral outflow of aqueous humour. First-line treatment for glaucoma.",
+    "dosageInfo": "1 drop in affected eye(s) once daily in the evening. Do not exceed once-daily dosing — more frequent use may reduce IOP-lowering effect. Regular IOP monitoring required. Long-term therapy — do not discontinue without physician advice.",
+    "usage": "Instil in the evening for maximum effect. Apply gentle nasolacrimal occlusion after instillation. Remove contact lenses before instillation — reinsert after 15 minutes. Refrigerate unopened bottles. Once opened, store below 25°C for up to 6 weeks.",
+    "composition": "Each mL contains Latanoprost 0.05mg (0.005% w/v). Preservative: Benzalkonium Chloride 0.02% w/v. Vehicle: Sodium Chloride, Sodium Dihydrogen Phosphate Monohydrate, Disodium Hydrogen Phosphate Anhydrous, Purified Water.",
+    "sideEffects": "Common: Increased iris pigmentation (irreversible), eyelash changes (length, thickness, pigmentation), conjunctival hyperaemia. Uncommon: Macular oedema, uveitis, periorbital skin darkening. Rare: Reactivation of herpes simplex keratitis. Inform patients about iris colour change.",
+    "price": 290,
+    "stock": 100,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=Latanoprost+0.005%25"
+    ],
+    "rating": 4.7,
+    "reviewCount": 178,
+    "isActive": true,
+    "tags": [
+      "glaucoma",
+      "prostaglandin",
+      "IOP",
+      "eye drops"
+    ],
+    "_forceNotify": true
+  },
+  {
+    "id": "prod_008",
+    "name": "Hydroxypropyl Methylcellulose Eye Drops 2%",
+    "slug": "hpmc-eye-drops-2",
+    "category": "Ophthalmics",
+    "subcategory": "Lubricating Eye Drops",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": false,
+    "form": "Eye Drops",
+    "description": "Viscous lubricating eye drops for moderate to severe dry eye syndrome. Higher viscosity formulation provides prolonged contact time and superior moisture retention compared to standard lubricants. Suitable for use before surgical procedures.",
+    "dosageInfo": "1–2 drops in affected eye(s) 3–4 times daily or as needed. For pre-operative use: instil as directed by surgeon. Can be used more frequently in severe dry eye. Suitable for long-term use.",
+    "usage": "Instil into conjunctival sac. Blink gently to distribute. May cause transient blurring — avoid driving immediately after instillation. Store at room temperature. Discard 30 days after opening.",
+    "composition": "Each mL contains Hydroxypropyl Methylcellulose (Hypromellose) 20mg (2% w/v). Preservative: Benzalkonium Chloride 0.01% w/v. Vehicle: Boric Acid, Borax, Purified Water.",
+    "sideEffects": "Very well tolerated. Common: Transient blurred vision immediately after instillation. Rare: Hypersensitivity to preservative. No significant systemic effects. Safe for long-term use.",
+    "price": 110,
+    "stock": 350,
+    "images": [
+      "https://placehold.co/400x400/0B1F3A/C9963E?text=HPMC+2%25"
+    ],
+    "rating": 4.6,
+    "reviewCount": 334,
+    "isActive": true,
+    "tags": [
+      "lubricant",
+      "dry eye",
+      "viscous",
+      "eye drops"
+    ]
+  },
+  {
+    "id": "prod-clotrimazole-cream",
+    "name": "Clotrimazole Cream 1% w/w",
+    "slug": "clotrimazole-cream-1",
+    "category": "Dermatology",
+    "subcategory": "Antifungal Creams",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": false,
+    "form": "Cream",
+    "description": "Broad-spectrum antifungal cream for the treatment of dermatophytosis, candidiasis, and pityriasis versicolor.",
+    "dosageInfo": "Apply thinly to affected area twice daily for 2–4 weeks",
+    "usage": "Clean and dry the affected area before application. Apply a thin layer and rub in gently. Wash hands after use.",
+    "composition": "Clotrimazole 1% w/w in a cream base",
+    "sideEffects": "Mild skin irritation, burning sensation at application site",
+    "price": 85,
+    "stock": 250,
+    "images": [],
+    "rating": 4.3,
+    "reviewCount": 0,
+    "isActive": true,
+    "tags": [
+      "antifungal",
+      "skin",
+      "dermatology"
+    ]
+  },
+  {
+    "id": "prod-amoxicillin-500",
+    "name": "Amoxicillin Capsules 500mg",
+    "slug": "amoxicillin-capsules-500mg",
+    "category": "General Medicine",
+    "subcategory": "Antibiotics",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Capsules",
+    "description": "Broad-spectrum aminopenicillin antibiotic for treatment of bacterial infections.",
+    "dosageInfo": "500mg three times daily for 5–7 days or as prescribed",
+    "usage": "Take with or without food. Complete the full course even if symptoms improve.",
+    "composition": "Amoxicillin trihydrate equivalent to Amoxicillin 500mg",
+    "sideEffects": "Nausea, diarrhoea, skin rash, allergic reactions",
+    "price": 120,
+    "stock": 500,
+    "images": [],
+    "rating": 4.4,
+    "reviewCount": 0,
+    "isActive": true,
+    "tags": [
+      "antibiotic",
+      "bacterial infection",
+      "general medicine"
+    ]
+  },
+  {
+    "id": "prod-cetirizine-10",
+    "name": "Cetirizine Hydrochloride Tablets 10mg",
+    "slug": "cetirizine-tablets-10mg",
+    "category": "General Medicine",
+    "subcategory": "Antihistamines",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": false,
+    "form": "Tablets",
+    "description": "Second-generation antihistamine for relief of allergic rhinitis, urticaria, and allergic conjunctivitis.",
+    "dosageInfo": "10mg once daily",
+    "usage": "Take with or without food. Avoid alcohol. May cause drowsiness.",
+    "composition": "Cetirizine Hydrochloride 10mg",
+    "sideEffects": "Drowsiness, dry mouth, headache",
+    "price": 65,
+    "stock": 800,
+    "images": [],
+    "rating": 4.5,
+    "reviewCount": 0,
+    "isActive": true,
+    "tags": [
+      "antihistamine",
+      "allergy",
+      "general medicine"
+    ]
+  },
+  {
+    "id": "prod-atorvastatin-20",
+    "name": "Atorvastatin Tablets 20mg",
+    "slug": "atorvastatin-tablets-20mg",
+    "category": "Cardiovascular",
+    "subcategory": "Statins",
+    "manufacturer": "Chandra Pharma",
+    "prescriptionRequired": true,
+    "form": "Tablets",
+    "description": "HMG-CoA reductase inhibitor for management of hypercholesterolaemia and prevention of cardiovascular events.",
+    "dosageInfo": "20mg once daily at bedtime",
+    "usage": "Take at bedtime. Avoid grapefruit juice. Regular liver function monitoring recommended.",
+    "composition": "Atorvastatin Calcium equivalent to Atorvastatin 20mg",
+    "sideEffects": "Myalgia, elevated liver enzymes, headache, GI disturbances",
+    "price": 145,
+    "stock": 300,
+    "images": [],
+    "rating": 4.4,
+    "reviewCount": 0,
+    "isActive": true,
+    "tags": [
+      "statin",
+      "cholesterol",
+      "cardiovascular"
+    ]
+  }
+]

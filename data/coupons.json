@@ -1,0 +1,17 @@
+[
+  {
+    "id": "mnpx2g30-c3o4gs",
+    "code": "TEHELKA",
+    "description": "grab this coupon for flat 9% additional discount",
+    "type": "percentage",
+    "value": 9,
+    "minOrderValue": 5000,
+    "maxDiscountAmount": 2000,
+    "applicableTo": "customer",
+    "usageLimit": 2,
+    "usageCount": 2,
+    "isActive": true,
+    "expiresAt": "2026-04-10T00:00:00.000Z",
+    "createdAt": "2026-04-08T10:39:59.725Z"
+  }
+]

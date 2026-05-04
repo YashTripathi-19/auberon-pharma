@@ -1,0 +1,35 @@
+{
+  "name": "Auberon Eye Care Centre",
+  "tagline": "Precision eye care, backed by decades of clinical expertise.",
+  "established": "2026",
+  "address": "Kanpur, Uttar Pradesh, India",
+  "phone": "+91 6307922085",
+  "email": "auberon.pharma@gmail.com",
+  "hours": "Mon–Sat: 9:00 AM – 6:00 PM IST",
+  "about": "Auberon Eye Care Centre is the clinical arm of Auberon Pharmaceuticals, bringing together the precision of our pharmaceutical expertise with world-class ophthalmic care. From routine eye check-ups to complex surgical procedures, our team of experienced ophthalmologists is committed to protecting and restoring your vision.",
+  "features": [
+    { "icon": "eye", "title": "Advanced Diagnostics", "description": "State-of-the-art diagnostic equipment for precise detection of eye conditions including glaucoma, cataracts, and retinal disorders." },
+    { "icon": "shield", "title": "GMP-Grade Medications", "description": "Direct access to Auberon's full ophthalmic range — manufactured in-house under strict GMP standards." },
+    { "icon": "users", "title": "Expert Ophthalmologists", "description": "A dedicated team of experienced eye surgeons and specialists committed to personalised patient care." },
+    { "icon": "clock", "title": "Same-Day Consultations", "description": "Urgent eye care consultations available same day — no long waits, no compromises." }
+  ],
+  "services": [
+    { "id": "consultation", "name": "Eye Consultation", "description": "Comprehensive eye examination including vision testing, pressure measurement, and slit-lamp evaluation.", "duration": "30–45 minutes", "price": "₹500", "isAvailable": true },
+    { "id": "cataract", "name": "Cataract Surgery", "description": "Phacoemulsification cataract surgery with premium IOL implantation for crystal-clear vision.", "duration": "45–60 minutes", "price": "On consultation", "isAvailable": true },
+    { "id": "glaucoma", "name": "Glaucoma Management", "description": "Complete glaucoma evaluation and long-term management including medication, laser, and surgical options.", "duration": "45 minutes", "price": "₹800", "isAvailable": true },
+    { "id": "retina", "name": "Retina Clinic", "description": "Diagnosis and treatment of retinal disorders including diabetic retinopathy, ARMD, and retinal detachment.", "duration": "60 minutes", "price": "On consultation", "isAvailable": true },
+    { "id": "lasik", "name": "LASIK Screening", "description": "Complete pre-LASIK evaluation to determine candidacy for laser vision correction surgery.", "duration": "60–90 minutes", "price": "₹1,000", "isAvailable": true },
+    { "id": "pediatric", "name": "Paediatric Eye Care", "description": "Specialised eye care for children including squint correction, amblyopia treatment, and vision therapy.", "duration": "30–45 minutes", "price": "₹500", "isAvailable": true }
+  ],
+  "doctors": [
+    { "id": "dr-tripathi", "name": "Dr. Anurag Ranjan Tripathi", "designation": "Founder & Chief Ophthalmologist", "specialisation": "Cataract Surgery, Glaucoma Management", "experience": "15+ years", "qualifications": "MS (Ophthalmology), DOMS", "available": true },
+    { "id": "dr-sharma", "name": "Dr. Priya Sharma", "designation": "Senior Ophthalmologist", "specialisation": "Retina & Vitreous Surgery", "experience": "10+ years", "qualifications": "MS (Ophthalmology), Fellowship Retina", "available": true },
+    { "id": "dr-verma", "name": "Dr. Rahul Verma", "designation": "Consultant Ophthalmologist", "specialisation": "LASIK & Refractive Surgery", "experience": "8+ years", "qualifications": "MS (Ophthalmology), Fellowship Refractive Surgery", "available": true }
+  ],
+  "stats": [
+    { "value": "5,000+", "label": "Patients Treated" },
+    { "value": "15+", "label": "Years of Expertise" },
+    { "value": "3", "label": "Specialist Doctors" },
+    { "value": "98%", "label": "Patient Satisfaction" }
+  ]
+}

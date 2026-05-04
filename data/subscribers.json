@@ -1,0 +1,39 @@
+[
+  {
+    "id": "mnis02dk-bhbbir",
+    "email": "yash.tripathi.35175@gmail.com",
+    "subscribedAt": "2026-04-03T10:43:47.336Z",
+    "isActive": true,
+    "source": "Newsletter → Signup",
+    "convertedAt": "2026-04-03T10:43:47.336Z"
+  },
+  {
+    "id": "mniyla02-0eeayz",
+    "email": "2k23.cs2311568@gmail.com",
+    "subscribedAt": "2026-04-03T13:48:14.690Z",
+    "isActive": true,
+    "source": "Newsletter"
+  },
+  {
+    "id": "mnj3ssx9-fso6n5",
+    "email": "y9851943@gmail.com",
+    "subscribedAt": "2026-04-03T16:14:03.885Z",
+    "isActive": true,
+    "source": "Signup"
+  },
+  {
+    "id": "mnk0xosc-uxrfoq",
+    "email": "devtripathiyash@gmail.com",
+    "subscribedAt": "2026-04-04T07:41:39.132Z",
+    "isActive": true,
+    "source": "Newsletter → Signup",
+    "convertedAt": "2026-04-04T07:44:18.328Z"
+  },
+  {
+    "id": "mnpwvkaa-695wjd",
+    "email": "2k23.cs2310755@gmail.com",
+    "subscribedAt": "2026-04-08T10:34:38.578Z",
+    "isActive": true,
+    "source": "Signup"
+  }
+]

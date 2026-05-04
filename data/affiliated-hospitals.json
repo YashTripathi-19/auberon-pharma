@@ -1,0 +1,24 @@
+[
+  {
+    "id": "hosp_1",
+    "name": "Drishti Eye Hospital",
+    "city": "Kanpur",
+    "speciality": "Ophthalmology",
+    "phone": "+91 9999999999",
+    "website": "",
+    "logo": "",
+    "active": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "hosp_1776933158506",
+    "name": "Santushti Hospital",
+    "city": "Kanpur",
+    "speciality": "Ortho",
+    "phone": "+916393858703",
+    "website": "",
+    "logo": "",
+    "active": true,
+    "createdAt": "2026-04-23T08:32:38.506Z"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fb_1776988997729",
+    "orderId": "ORD-moc5cww3-3c4ez8",
+    "customerName": "Yash Tripathi",
+    "customerEmail": "customer@example.com",
+    "overallRating": 5,
+    "message": "everything is good ",
+    "productRatings": [],
+    "submittedAt": "2026-04-24T00:03:17.366Z",
+    "feedbackType": "ordering_experience"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ophthalmics",
+    "name": "Ophthalmics",
+    "description": "Specialised eye drops and ophthalmic formulations",
+    "icon": "eye",
+    "isActive": true,
+    "isPublic": true,
+    "subcategories": [
+      "Antibiotic Eye Drops",
+      "Anti-inflammatory Eye Drops",
+      "Lubricating Eye Drops",
+      "Glaucoma Eye Drops",
+      "Antifungal Eye Drops"
+    ]
+  },
+  {
+    "id": "dermatology",
+    "name": "Dermatology",
+    "description": "Skin care and dermatological formulations",
+    "icon": "shield",
+    "isActive": false,
+    "isPublic": false,
+    "subcategories": [
+      "Antifungal Creams",
+      "Steroid Creams",
+      "Antibacterial Creams",
+      "Moisturisers"
+    ]
+  },
+  {
+    "id": "general-medicine",
+    "name": "General Medicine",
+    "description": "General purpose tablets, capsules and oral medications",
+    "icon": "pill",
+    "isActive": false,
+    "isPublic": false,
+    "subcategories": [
+      "Antibiotics",
+      "Antihistamines",
+      "Pain Relief",
+      "Vitamins & Supplements"
+    ]
+  },
+  {
+    "id": "cardiovascular",
+    "name": "Cardiovascular",
+    "description": "Heart and circulatory system medications",
+    "icon": "heart",
+    "isActive": false,
+    "isPublic": false,
+    "subcategories": [
+      "Statins",
+      "Beta Blockers",
+      "ACE Inhibitors"
+    ]
+  }
+]
