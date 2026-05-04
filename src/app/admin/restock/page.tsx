@@ -373,7 +373,7 @@ export default function AdminRestockPage() {
                       {req.userEmail}
                     </td>
                     <td style={{ padding: "16px 20px", fontSize: "13px", color: "#0B1F3A", fontWeight: 500 }}>
-                      {req.requestedQty || '—'}
+                      {(req as any).requestedQty || '—'}
                     </td>
                     <td style={{ padding: "16px 20px", fontSize: "11px", color: "#6E6E73", fontFamily: "monospace" }}>
                       {req.orderId ? req.orderId.slice(0, 12) + '…' : '—'}
