@@ -11,7 +11,7 @@ export async function PATCH(request: NextRequest) {
       return NextResponse.json({ error: "Unauthorised" }, { status: 401 });
     }
     const hospitalWing = await request.json();
-    const settings = getSettings() as Record<string, unknown>;
+    const settings = getSettings() as unknown as Record<string, unknown>;
     settings.hospitalWing = hospitalWing;
     saveSettings(settings as Parameters<typeof saveSettings>[0]);
     return NextResponse.json({ success: true });
